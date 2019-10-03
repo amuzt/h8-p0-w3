@@ -2,7 +2,7 @@
 //output
 //"!dlrow olleh"
 
-function balikString(kata){
+/* function balikString(kata){
     length = kata.length;
 
     var balikString = '';
@@ -14,3 +14,16 @@ function balikString(kata){
     return balikString;
 }
     console.log(balikString('hello world!'));
+    */
+
+
+function balikString(kata) {
+    var i = '';
+    for (var j = kata.length - 1; j >= 0; j--) {
+        i = i + kata[j];
+    }
+
+    return i;
+}
+
+console.log(balikString('hello world!'));
